@@ -17,7 +17,8 @@ public class QuestionList extends DateSince_QuestionList implements ActionListen
         jPanel = new JPanel(new GridBagLayout());
         getContentPane().add(jPanel);
         jLabel.setText("Вопрос #1");
-        jPanel.add(jLabel);
+        jPanel.add(jLabel, GridConstraints(0,1));
+        jPanel.add(jLabelQuestion, GridConstraints(0,2));
 
 //обьединение в группу
         Group.add(check_1);
@@ -28,12 +29,12 @@ public class QuestionList extends DateSince_QuestionList implements ActionListen
 //вставка кнопок в панель
         Image = new ImageIcon(img[0]);
         ImageRes(Image);
-        jPanel.add(jLabelImg, GridConstraints(0, 2));
-        jPanel.add(check_1, GridConstraints(0, 3));
-        jPanel.add(check_2, GridConstraints(0, 4));
-        jPanel.add(check_3, GridConstraints(0, 5));
-        jPanel.add(check_4, GridConstraints(0, 6));
-        jPanel.add(resultBut, GridConstraints(0, 7));
+        jPanel.add(jLabelImg, GridConstraints(0, 3));
+        jPanel.add(check_1, GridConstraints(0, 4));
+        jPanel.add(check_2, GridConstraints(0, 5));
+        jPanel.add(check_3, GridConstraints(0, 6));
+        jPanel.add(check_4, GridConstraints(0, 7));
+        jPanel.add(resultBut, GridConstraints(0, 8));
         resultBut.addActionListener(this);
 //вызов функции проверки ответов
         QuestionRealize(QuestionList, numberQuestion);

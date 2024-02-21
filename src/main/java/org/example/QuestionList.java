@@ -64,7 +64,6 @@ public class QuestionList extends DateSince_QuestionList implements ActionListen
 //сравнивание правильности ответов
     @Override
     public void actionPerformed(ActionEvent e) {
-        Group.clearSelection();
         if(numberQuestion == 10){
             JOptionPane.showMessageDialog(null, "Поздравляю, вы прошли тест");
             System.exit(0);
@@ -119,6 +118,7 @@ public class QuestionList extends DateSince_QuestionList implements ActionListen
         else {
             JOptionPane.showMessageDialog(null, "не правильно");
         }
+        Group.clearSelection();
         QuestionRealize(QuestionList, numberQuestion);
     }
 }

@@ -15,16 +15,17 @@ public class DateSince_QuestionList extends JFrame {
     protected JRadioButton check_3 = new JRadioButton();
     protected JRadioButton check_4 = new JRadioButton();
     protected ButtonGroup Group = new ButtonGroup();
-    protected String[] img = {"src/img/image_1.png",
-            "src/img/image_2.jpg",
-            "src/img/image_3.png",
-            "src/img/image_4.png",
-            "src/img/image_5.jpeg",
-            "src/img/image_6.png",
-            "src/img/image_7.jpeg",
-            "src/img/image_8.png",
-            "src/img/image_9.jpeg",
-            "src/img/image_10.png"
+    protected String[] img = {
+            "src/main/resources/img/image_1.png",
+            "src/main/resources/img/image_2.jpg",
+            "src/main/resources/img/image_3.png",
+            "src/main/resources/img/image_4.png",
+            "src/main/resources/img/image_5.jpeg",
+            "src/main/resources/img/image_6.png",
+            "src/main/resources/img/image_7.jpeg",
+            "src/main/resources/img/image_8.png",
+            "src/main/resources/img/image_9.jpeg",
+            "src/main/resources/img/image_10.png"
     };
     protected String[] answer = {
             "2. пешеходный переход",

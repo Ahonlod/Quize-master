@@ -15,8 +15,7 @@ public class DateSince_QuestionList extends JFrame {
     protected JRadioButton check_3 = new JRadioButton();
     protected JRadioButton check_4 = new JRadioButton();
     protected ButtonGroup Group = new ButtonGroup();
-    protected String[] img = {
-            "src/main/resources/img/image_1.png",
+    protected String[] img = {"src/main/resources/img/image_1.png",
             "src/main/resources/img/image_2.jpg",
             "src/main/resources/img/image_3.png",
             "src/main/resources/img/image_4.png",

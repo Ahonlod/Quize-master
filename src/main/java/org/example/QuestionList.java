@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Objects;
 
 //лист с вопросами
 public class QuestionList extends DateSince_QuestionList implements ActionListener {
@@ -27,7 +28,7 @@ public class QuestionList extends DateSince_QuestionList implements ActionListen
         Group.add(check_4);
 
 //вставка кнопок в панель
-        Image = new ImageIcon(img[0]);
+        Image = new ImageIcon(Objects.requireNonNull(Main.class.getResource(img[0])));
         ImageRes(Image);
         jPanel.add(jLabelImg, GridConstraints(0, 3));
         jPanel.add(check_1, GridConstraints(0, 4));
@@ -76,7 +77,7 @@ public class QuestionList extends DateSince_QuestionList implements ActionListen
             check_4.setText("");
             numberQuestion++;
             jLabel.setText("Вопрос #"+numberQuestion);
-            Image.setImage(new ImageIcon(img[numberQuestion-1]).getImage());
+            Image.setImage(new ImageIcon(Objects.requireNonNull(Main.class.getResource(img[numberQuestion - 1]))).getImage());
             jLabelImg.setIcon(Image);
             jPanel.add(jLabel, GridConstraints(0,1));
         }
@@ -87,7 +88,8 @@ public class QuestionList extends DateSince_QuestionList implements ActionListen
             check_3.setText("");
             check_4.setText("");
             numberQuestion++;
-            jLabel.setText("Вопрос #"+numberQuestion);Image.setImage(new ImageIcon(img[numberQuestion-1]).getImage());
+            jLabel.setText("Вопрос #"+numberQuestion);
+            Image.setImage(new ImageIcon(Objects.requireNonNull(Main.class.getResource(img[numberQuestion - 1]))).getImage());
             jLabelImg.setIcon(Image);
             jPanel.add(jLabel, GridConstraints(0,1));
         }
@@ -99,7 +101,7 @@ public class QuestionList extends DateSince_QuestionList implements ActionListen
             check_4.setText("");
             numberQuestion++;
             jLabel.setText("Вопрос #"+numberQuestion);
-            Image.setImage(new ImageIcon(img[numberQuestion-1]).getImage());
+            Image.setImage(new ImageIcon(Objects.requireNonNull(Main.class.getResource(img[numberQuestion - 1]))).getImage());
             jLabelImg.setIcon(Image);
             jPanel.add(jLabel, GridConstraints(0,1));
         }
@@ -111,7 +113,7 @@ public class QuestionList extends DateSince_QuestionList implements ActionListen
             check_4.setText("");
             numberQuestion++;
             jLabel.setText("Вопрос #"+numberQuestion);
-            Image.setImage(new ImageIcon(img[numberQuestion-1]).getImage());
+            Image.setImage(new ImageIcon(Objects.requireNonNull(Main.class.getResource(img[numberQuestion - 1]))).getImage());
             jLabelImg.setIcon(Image);
             jPanel.add(jLabel, GridConstraints(0,1));
         }
